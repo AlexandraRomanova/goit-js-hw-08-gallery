@@ -4,9 +4,7 @@ const galleryRef = document.querySelector('.js-gallery');
 const lightBoxRef = document.querySelector('.js-lightbox');
 const lightboxContentRef = document.querySelector('.lightbox__content');
 const lightboxImageRef = document.querySelector('.lightbox__image');
-const closeModalBtn = document.querySelector(
-    'button[data-action="close-lightbox"]',
-);
+const closeModalBtn = document.querySelector('button[data-action="close-lightbox"]');
 
 function createGalleryRef(item) {
     const galleryItemRef = document.createElement('li');
@@ -68,6 +66,7 @@ galleryRef.addEventListener('keydown', onArrowRight);
 galleryRef.addEventListener('keydown', onArrowLeft);
 
 function onOpenModal(event) {
+    event.preventDefault()
     if (event.target === event.currentTarget) {
         return;
     }
