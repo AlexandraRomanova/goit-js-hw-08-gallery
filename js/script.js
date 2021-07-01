@@ -2,7 +2,7 @@ import items from './gallery-items.js';
 
 const galleryRef = document.querySelector('.js-gallery');
 const lightBoxRef = document.querySelector('.js-lightbox');
-const lightboxContentRef = document.querySelector('.lightbox__content');
+const lightboxContentRef = document.querySelector('.lightbox__overlay');
 const lightboxImageRef = document.querySelector('.lightbox__image');
 const closeModalBtn = document.querySelector('button[data-action="close-lightbox"]');
 
