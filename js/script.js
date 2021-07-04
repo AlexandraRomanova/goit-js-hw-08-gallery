@@ -102,7 +102,7 @@ function onPressEsc(event) {
 
 function onRightNext() {
     const activeImage = items.findIndex(
-        img => img.original === lightboxImageRef.src,
+        img => img.original === lightboxImageRef.src
     );
 
     let index = activeImage ? activeImage : 0;
@@ -118,7 +118,7 @@ function onRightNext() {
 
 function onLeftNext() {
     const activeImage = items.findIndex(
-        img => img.original === lightboxImageRef.src,
+        img => img.original === lightboxImageRef.src
     );
 
     let index = activeImage ? activeImage : items.length - 1;
